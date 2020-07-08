@@ -11,6 +11,7 @@ make install
 
 ## Running 
 ```bash
+source activate venv
 make
 ```
 This command downloads the required data using `yahoofinancials` package and cleans it. The data is then ingested by the zipline framework and the backtesting is run. The data is then deleted from the filesystem.

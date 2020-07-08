@@ -18,7 +18,6 @@ def download_csv_data(ticker, start_date, end_date, freq, path):
     df.index = pd.to_datetime(df.index)
     df['dividend'] = 0
     df['split'] = 1
-
     # save data to csv for later ingestion
     df.to_csv(path, header=True, index=True)
 
